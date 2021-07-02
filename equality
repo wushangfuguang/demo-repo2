@@ -1,0 +1,16 @@
+class VarArraySolutionPointer(cp_model.CpsolverSolution callback)
+    def __initi__(self, variables):
+        cp_model.CpsolverSolutionCallback.__initi__(self)
+        self.__variables = variables
+        self.__solution_counts = 0
+
+    def on_solution_callback(self):
+        self.__solution_counts += 1 
+        for v in self.__solution:
+            print('%s = %a',(v, self_value(v), ' '))
+            print()
+
+    def solution__count(self):
+        return self.__solution count
+
+        
